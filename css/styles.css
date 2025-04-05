@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-color: #011f3f;
+}
+
+.background.error {
+  background-color: red;
+}
+
+.container {
+  color: #fef2bf;
+  font-family: "Press Start 2P";
+  text-align: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  margin: 5%;
+  font-size: 3rem;
+}
+
+.container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container .buttons .btn {
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  margin: 25px;
+}
+
+.green-btn {
+  background-color: green;
+}
+
+.green-btn.current {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 2px white;
+          box-shadow: 0 0 10px 2px white;
+}
+
+.red-btn {
+  background-color: red;
+}
+
+.red-btn.current {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 2px white;
+          box-shadow: 0 0 10px 2px white;
+}
+
+.yellow-btn {
+  background-color: yellow;
+}
+
+.yellow-btn.current {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 2px white;
+          box-shadow: 0 0 10px 2px white;
+}
+
+.blue-btn {
+  background-color: blue;
+}
+
+.blue-btn.current {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 2px white;
+          box-shadow: 0 0 10px 2px white;
+}
+/*# sourceMappingURL=styles.css.map */

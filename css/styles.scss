@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Press+Start+2P&display=swap");
+
+$background: #011f3f;
+$box1: green;
+$box2: red;
+$box3: yellow;
+$box4: blue;
+$title: #fef2bf;
+$effect: white;
+$error: red;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-color: $background;
+    &.error {
+        background-color: $error;
+    }
+}
+
+.container {
+    color: $title;
+    font-family: "Press Start 2P";
+    text-align: center;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    h1 {
+        margin: 5%;
+        font-size: 3rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        margin: 0 auto;
+
+        .btn {
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+            border-radius: 20%;
+            margin: 25px;
+        }
+    }
+}
+
+@mixin btnAttr($color) {
+    background-color: $color;
+
+    &.current {
+    background-color: $effect;
+    box-shadow: 0 0 10px 2px $effect;
+    }
+}
+
+.green-btn {
+    @include btnAttr($box1);
+}
+
+.red-btn {
+    @include btnAttr($box2);
+}
+
+.yellow-btn {
+    @include btnAttr($box3);
+}
+
+.blue-btn {
+    @include btnAttr($box4);
+}
